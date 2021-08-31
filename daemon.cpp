@@ -98,18 +98,14 @@ int main(int argc, char **argv)
     // Argument must be test or link to m3u8 file
     if (argc != 2)
     {
-        std::cout << "Usage: " << argv[0] << " test1 or test2 or your <uri> to m3u8" << std::endl;
+        std::cout << "Usage: " << argv[0] << " test or your <uri> to m3u8" << std::endl;
         return -1;
     }
     std::string uriStr = "";
 
-    if (strcmp(argv[1], "test1") == 0)
+    if (strcmp(argv[1], "test") == 0)
     {
         uriStr = "http://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa_video_1080_4800000.m3u8";
-    }
-    else if (strcmp(argv[1], "test2") == 0)
-    {
-        uriStr = "http://wowza-test.streamroot.io/liveOriginAbsolute/_definst_/sintel-live.smil/chunklist_b1128000.m3u8";
     }
     else
     {
