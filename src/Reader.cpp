@@ -1,9 +1,6 @@
 #include "include/Reader.h"
-
 #include <iostream>
-#include<opencv2/opencv.hpp>
-#include <opencv2/imgcodecs.hpp>
-#include <opencv2/highgui.hpp>  
+#include <opencv2/opencv.hpp>
 
 using namespace std; 
 
@@ -16,13 +13,14 @@ Reader::~Reader() {
 }
 
 cv::Mat Reader::read(string fileName, float size) {
-   // LOG(INFO) << "[Extract Feature] Compute SIFT features using opencv sift\n";
+    //std::cout << "ENV is " << std::getenv("HOME") <<  std::endl;
+    //LOG(INFO) << "[Extract Feature] Compute SIFT features using opencv sift\n";
     
    /* cout << "Detection des visages\nveillez entrer le chemin d'accès :" << endl;
     cin >> filePath ;
     cout << "veillez entrer le nom du fichier :" << endl;
     cin >> fileName;*/
-    // load the image in BGR format
+    // load the image in BGR format 
     cv::Mat image = cv::imread(fileName, cv::IMREAD_COLOR);
     if (!image.data)
     {

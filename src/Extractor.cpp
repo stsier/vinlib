@@ -1,8 +1,8 @@
 #include "include/Extractor.h"
 
 #include <iostream>
+//#include <numeric>
 #include <opencv2/imgproc.hpp> 
-#include <numeric>
 
 using namespace std; 
 

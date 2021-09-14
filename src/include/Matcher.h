@@ -5,8 +5,6 @@
 
 #include "common.h"
 #include "Extractor.h"
-//#include <opencv2/core/core.hpp>
-//#include <opencv2/highgui/highgui.hpp>
 
 class Matcher {
     public:

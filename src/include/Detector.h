@@ -1,7 +1,6 @@
 #pragma once
        
 #include "common.h"
-#include <opencv2/imgproc.hpp>   
 
 //  Haar Feature-based Cascade Classifier for Object Detection
 #include <opencv2/objdetect.hpp> 

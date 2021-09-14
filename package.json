@@ -1,0 +1,26 @@
+{
+  "name": "@stsier/vinlib",
+  "version": "0.0.11",
+  "description": "<div align=\"center\" id=\"top\"> \r   <img src=\"./.github/app.gif\" alt=\"Vintuosocpp\" />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stsier/vinlib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stsier/vinlib/issues"
+  },
+  "homepage": "https://github.com/stsier/vinlib#readme",
+  "devDependencies": {
+    "node-addon-api": "^4.1.0"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0"
+  }
+}

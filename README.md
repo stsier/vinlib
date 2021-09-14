@@ -39,6 +39,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="#link-references">References</a> &#xa0; | &#xa0;
   <a href="https://github.com/stsier" target="_blank">Author</a>
 </p>
 
@@ -79,22 +80,39 @@ $ unzip opencv.zip; rm opencv.zip
 $ git clone https://github.com/opencv/opencv_contrib.git
 $ cd opencv-master
 $ mkdir -p build && cd build
-$ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules  -DWITH_GTK=ON .. 
+$ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules  -DWITH_GTK=ON -DOPENCV_GENERATE_PKGCONFIG=YES  -DBUILD_SHARED_LIBS=OFF -DCMAKE_INSTALL_PREFIX=/home/sergei/Vintuoso/vintuosocpp/vinlib/opencv .. 
+$ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules  -DWITH_GTK=OFF -DOPENCV_GENERATE_PKGCONFIG=NO -DCMAKE_BUILD_TYPE=Release -DENABLE_PIC=OFF -DBUILD_SHARED_LIBS=OFF -DWITH_PNG=NO  -DCMAKE_INSTALL_PREFIX="/usr/local" ..
 $ cmake --build .
 $ make -j5
 # Clone this project
-$ git clone https://github.com/stsier/vintuosocpp
-
-
+$ git clone https://github.com/stsier/vinlib
 
 # Access
-$ cd vintuosocpp
+$ cd vinlib
+$ mkdir build; cd build
+
+# Build
+$ cmake ..
+$ cmake --build .
+
+# Init node project 
+$ npm init -y
 
 # Install dependencies
-$ yarn
+$ npm install -S node-addon-api
+$ npm install -S bindings
+$ npm install -g cmake-js
+
+
+# Or
+~~$ npm install -g node-gyp~~
+~~$ node-gyp configure~~
+~~$ node-gyp build~~
+
+# Build
 
 # Run the project
-$ yarn start
+$ node index.js
 
 # The server will initialize in the <http://localhost:3000>
 ```
@@ -105,6 +123,16 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
 
 
 Made with :heart: by <a href="https://github.com/stsier" target="_blank">Sergei TSIER</a>
+
+
+## :link: References ##
+
+<a href="https://medium.com/jspoint/a-simple-guide-to-load-c-c-code-into-node-js-javascript-applications-3fcccf54fd32">Node js C++</a>
+<a href="https://docs.opencv.org/4.5.2/d1/de0/tutorial_py_feature_homography.html">OpenCV Python Homography</a>
+<a href="https://docs.opencv.org/3.4/d7/dff/tutorial_feature_homography.html">OpenCV C++ Homography</a>
+<a href="https://stackoverflow.com/questions/57075719/filtering-out-false-positives-from-feature-matching-homography-opencv">Filtering with Homography</a>
+<a href="https://towardsdatascience.com/improving-your-image-matching-results-by-14-with-one-line-of-code-b72ae9ca2b73">BEBILD</a>
+
 
 &#xa0;
 
