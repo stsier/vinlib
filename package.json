@@ -1,5 +1,5 @@
 {
-  "name": "@stsier/vinlib",
+  "name": "vinlib",
   "version": "0.0.11",
   "description": "<div align=\"center\" id=\"top\"> \r   <img src=\"./.github/app.gif\" alt=\"Vintuosocpp\" />",
   "main": "index.js",
