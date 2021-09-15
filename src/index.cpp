@@ -11,9 +11,10 @@ Napi::String start(const Napi::CallbackInfo& info) {
     string img1 = static_cast<string>(info[1].ToString());
     string img2 = static_cast<string>(info[2].ToString());
     
-    path = "undefined" ? "" : path;
-    img1 = "undefined" ? "" : img1;
-    img2 = "undefined" ? "" : img2;
+    path = path.compare("undefined") == 0 ? "" : path;
+    img1 = img1.compare("undefined") == 0 ? "" : img1;
+    img2 = img2.compare("undefined") == 0 ? "" : img2;
+    
     std::cout << "info.Env(): "<< path << ": " << img1 <<" vs " << img2 << std::endl;
 
     std::string result = "vinlib terminated successfully";

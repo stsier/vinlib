@@ -1,6 +1,6 @@
 {
-  "name": "vinlib",
-  "version": "0.0.11",
+  "name": "@stsier/vinlib",
+  "version": "0.0.15",
   "description": "<div align=\"center\" id=\"top\"> \r   <img src=\"./.github/app.gif\" alt=\"Vintuosocpp\" />",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,5 @@
     "node-addon-api": "^4.1.0"
   },
   "dependencies": {
-    "bindings": "^1.5.0"
   }
 }

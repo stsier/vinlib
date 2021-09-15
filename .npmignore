@@ -1,5 +1,4 @@
 src
-README.md
 .gitignore
 .npmignpre
 node_modules
@@ -14,6 +13,8 @@ dummy
 workspace.code-workspace
 opencv
 opencvlibs
+libs
+README
 .vscode
 *.cpp
 *.txt

@@ -20,7 +20,6 @@ void Detector::load(string cascadeFileName) {
         return;
     }
     
-
 }
  
 vector<Rect> Detector::process(Mat& img, double scale) {

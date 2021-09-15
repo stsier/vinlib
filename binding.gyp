@@ -26,7 +26,6 @@
       'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ],
     "libraries": [
         "-lopencv_core", 
-        "-lopencv_highgui",
         "-lopencv_imgcodecs",
          "-lopencv_flann",
          "-lopencv_calib3d",
@@ -35,15 +34,7 @@
          "-lopencv_objdetect",
          "-L/usr/local/lib",
          "-L/usr/local/share/opencv4/",
-        "-lwebp",
-        "-ltiff",
-        "-lz",
-        "-ljasper",
-        "-lopenjp2",
-     
-
-         "-lpng",
-         "-ljpeg",
+         "-lrt",
         "-L/usr/lib"
       ]
       
